@@ -3,10 +3,10 @@ import os
 import json
 import asyncio
 from typing import Optional, List, Dict, Any
-from inference import run_inference
-from render_engine.main import process_json_file as render_task
-from render_engine.render_utils import determine_output_type as get_rendering_type
-from eval_engine.main import evaluate_dataset
+from .inference import run_inference
+from .render_engine.main import process_json_file as render_task
+from .render_engine.render_utils import determine_output_type as get_rendering_type
+from .eval_engine.main import evaluate_dataset
 
 
 class StructEvalCLI:
@@ -26,10 +26,13 @@ class StructEvalCLI:
         with open(input_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
+        # Prepare suffix for specific models
+        no_think_suffix = "\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B" else ""
+
         queries = [
             f"""{item['query']}
-            \n\nIMPORTANT: Only output the required output format. You must start the format/code with <|BEGIN_CODE|> and end the format/code with  <|END_CODE|>. No other text output (explanation, comments, etc.) are allowed.  Do not use markdown code fences.
-            {"\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B" else ""}
+
+IMPORTANT: Only output the required output format. You must start the format/code with <|BEGIN_CODE|> and end the format/code with  <|END_CODE|>. No other text output (explanation, comments, etc.) are allowed.  Do not use markdown code fences.{no_think_suffix}
             """
             for item in data
         ]
@@ -180,9 +183,8 @@ def main():
 
         return wrapper
 
+    # Only wrap the async render method, not the sync inference and evaluate methods
     StructEvalCLI.render = async_to_sync(StructEvalCLI.render)
-    StructEvalCLI.evaluate = async_to_sync(StructEvalCLI.evaluate)
-    StructEvalCLI.inference = async_to_sync(StructEvalCLI.inference)
 
     fire.Fire(StructEvalCLI)
 
