@@ -1,0 +1,574 @@
+Loading dataset...
+Total samples: 2035
+
+====================================================================================================
+TASK ID PATTERN ANALYSIS
+====================================================================================================
+
+Task: CSV to JSON
+Count: 50
+First task_id: 020500
+Last task_id:  020549
+Sample IDs: ['020500', '020501', '020502', '020503', '020504'] ...
+Input type: CSV -> Output type: JSON
+Rendering: False
+2-digit prefixes: {'02': 50}
+4-digit prefixes: {'0205': 50}
+
+Task: CSV to XML
+Count: 50
+First task_id: 021700
+Last task_id:  021749
+Sample IDs: ['021700', '021701', '021702', '021703', '021704'] ...
+Input type: CSV -> Output type: XML
+Rendering: False
+2-digit prefixes: {'02': 50}
+4-digit prefixes: {'0217': 50}
+
+Task: CSV to YAML
+Count: 50
+First task_id: 021800
+Last task_id:  021849
+Sample IDs: ['021800', '021801', '021802', '021803', '021804'] ...
+Input type: CSV -> Output type: YAML
+Rendering: False
+2-digit prefixes: {'02': 50}
+4-digit prefixes: {'0218': 50}
+
+Task: Convert HTML to Angular
+Count: 30
+First task_id: 040100
+Last task_id:  040129
+Sample IDs: ['040100', '040101', '040102', '040103', '040104'] ...
+Input type: HTML -> Output type: Angular
+Rendering: True
+2-digit prefixes: {'04': 30}
+4-digit prefixes: {'0401': 30}
+
+Task: Convert HTML to React
+Count: 45
+First task_id: 041100
+Last task_id:  041144
+Sample IDs: ['041100', '041101', '041102', '041103', '041104'] ...
+Input type: HTML -> Output type: React
+Rendering: True
+2-digit prefixes: {'04': 45}
+4-digit prefixes: {'0411': 45}
+
+Task: Convert HTML to Vue
+Count: 40
+First task_id: 041600
+Last task_id:  041639
+Sample IDs: ['041600', '041601', '041602', '041603', '041604'] ...
+Input type: HTML -> Output type: Vue
+Rendering: True
+2-digit prefixes: {'04': 40}
+4-digit prefixes: {'0416': 40}
+
+Task: Convert Markdown to Angular
+Count: 10
+First task_id: 070100
+Last task_id:  070109
+Sample IDs: ['070100', '070101', '070102', '070103', '070104'] ...
+Input type: Markdown -> Output type: Angular
+Rendering: True
+2-digit prefixes: {'07': 10}
+4-digit prefixes: {'0701': 10}
+
+Task: Convert Markdown to HTML
+Count: 50
+First task_id: 070400
+Last task_id:  070449
+Sample IDs: ['070400', '070401', '070402', '070403', '070404'] ...
+Input type: Markdown -> Output type: HTML
+Rendering: True
+2-digit prefixes: {'07': 50}
+4-digit prefixes: {'0704': 50}
+
+Task: Convert Markdown to React
+Count: 30
+First task_id: 071100
+Last task_id:  071129
+Sample IDs: ['071100', '071101', '071102', '071103', '071104'] ...
+Input type: Markdown -> Output type: React
+Rendering: True
+2-digit prefixes: {'07': 30}
+4-digit prefixes: {'0711': 30}
+
+Task: Convert Markdown to Vue
+Count: 25
+First task_id: 071600
+Last task_id:  071624
+Sample IDs: ['071600', '071601', '071602', '071603', '071604'] ...
+Input type: Markdown -> Output type: Vue
+Rendering: True
+2-digit prefixes: {'07': 25}
+4-digit prefixes: {'0716': 25}
+
+Task: Convert Matplotlib to TikZ
+Count: 100
+First task_id: 08XX00
+Last task_id:  08XX99
+Sample IDs: ['08XX00', '08XX01', '08XX02', '08XX03', '08XX04'] ...
+Input type: Matplotlib -> Output type: TikZ
+Rendering: True
+2-digit prefixes: {'08': 100}
+4-digit prefixes: {'08XX': 100}
+
+Task: Convert React to Angular
+Count: 5
+First task_id: 110100
+Last task_id:  110104
+All IDs: ['110100', '110101', '110102', '110103', '110104']
+Input type: React -> Output type: Angular
+Rendering: True
+2-digit prefixes: {'11': 5}
+4-digit prefixes: {'1101': 5}
+
+Task: Convert React to HTML
+Count: 45
+First task_id: 110400
+Last task_id:  110444
+Sample IDs: ['110400', '110401', '110402', '110403', '110404'] ...
+Input type: React -> Output type: HTML
+Rendering: True
+2-digit prefixes: {'11': 45}
+4-digit prefixes: {'1104': 45}
+
+Task: Convert Vue to HTML
+Count: 40
+First task_id: 160400
+Last task_id:  160439
+Sample IDs: ['160400', '160401', '160402', '160403', '160404'] ...
+Input type: Vue -> Output type: HTML
+Rendering: True
+2-digit prefixes: {'16': 40}
+4-digit prefixes: {'1604': 40}
+
+Task: Convert Vue to React
+Count: 15
+First task_id: 161100
+Last task_id:  161114
+Sample IDs: ['161100', '161101', '161102', '161103', '161104'] ...
+Input type: Vue -> Output type: React
+Rendering: True
+2-digit prefixes: {'16': 15}
+4-digit prefixes: {'1611': 15}
+
+Task: JSON to CSV
+Count: 50
+First task_id: 050200
+Last task_id:  050249
+Sample IDs: ['050200', '050201', '050202', '050203', '050204'] ...
+Input type: JSON -> Output type: CSV
+Rendering: False
+2-digit prefixes: {'05': 50}
+4-digit prefixes: {'0502': 50}
+
+Task: JSON to XML
+Count: 50
+First task_id: 051700
+Last task_id:  051749
+Sample IDs: ['051700', '051701', '051702', '051703', '051704'] ...
+Input type: JSON -> Output type: XML
+Rendering: False
+2-digit prefixes: {'05': 50}
+4-digit prefixes: {'0517': 50}
+
+Task: JSON to YAML
+Count: 50
+First task_id: 051800
+Last task_id:  051849
+Sample IDs: ['051800', '051801', '051802', '051803', '051804'] ...
+Input type: JSON -> Output type: YAML
+Rendering: False
+2-digit prefixes: {'05': 50}
+4-digit prefixes: {'0518': 50}
+
+Task: TOML to JSON
+Count: 50
+First task_id: 100500
+Last task_id:  100549
+Sample IDs: ['100500', '100501', '100502', '100503', '100504'] ...
+Input type: TOML -> Output type: JSON
+Rendering: False
+2-digit prefixes: {'10': 50}
+4-digit prefixes: {'1005': 50}
+
+Task: TOML to YAML
+Count: 50
+First task_id: 101800
+Last task_id:  101849
+Sample IDs: ['101800', '101801', '101802', '101803', '101804'] ...
+Input type: TOML -> Output type: YAML
+Rendering: False
+2-digit prefixes: {'10': 50}
+4-digit prefixes: {'1018': 50}
+
+Task: Text to Angular
+Count: 50
+First task_id: 000100
+Last task_id:  000149
+Sample IDs: ['000100', '000101', '000102', '000103', '000104'] ...
+Input type: Text -> Output type: Angular
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0001': 50}
+
+Task: Text to CSV
+Count: 50
+First task_id: 000200
+Last task_id:  000249
+Sample IDs: ['000200', '000201', '000202', '000203', '000204'] ...
+Input type: Text -> Output type: CSV
+Rendering: False
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0002': 50}
+
+Task: Text to Canvas
+Count: 50
+First task_id: 000300
+Last task_id:  000349
+Sample IDs: ['000300', '000301', '000302', '000303', '000304'] ...
+Input type: Text -> Output type: Canvas
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0003': 50}
+
+Task: Text to HTML
+Count: 50
+First task_id: 000400
+Last task_id:  000449
+Sample IDs: ['000400', '000401', '000402', '000403', '000404'] ...
+Input type: Text -> Output type: HTML
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0004': 50}
+
+Task: Text to JSON
+Count: 50
+First task_id: 000500
+Last task_id:  000549
+Sample IDs: ['000500', '000501', '000502', '000503', '000504'] ...
+Input type: Text -> Output type: JSON
+Rendering: False
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0005': 50}
+
+Task: Text to Latex
+Count: 50
+First task_id: 00XX00
+Last task_id:  00XX49
+Sample IDs: ['00XX00', '00XX01', '00XX02', '00XX03', '00XX04'] ...
+Input type: Text -> Output type: Latex
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'00XX': 50}
+
+Task: Text to Markdown
+Count: 50
+First task_id: 000700
+Last task_id:  000749
+Sample IDs: ['000700', '000701', '000702', '000703', '000704'] ...
+Input type: Text -> Output type: Markdown
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0007': 50}
+
+Task: Text to Matplotlib
+Count: 50
+First task_id: 000800
+Last task_id:  000849
+Sample IDs: ['000800', '000801', '000802', '000803', '000804'] ...
+Input type: Text -> Output type: Matplotlib
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0008': 50}
+
+Task: Text to Mermaid
+Count: 50
+First task_id: 000900
+Last task_id:  000949
+Sample IDs: ['000900', '000901', '000902', '000903', '000904'] ...
+Input type: Text -> Output type: Mermaid
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0009': 50}
+
+Task: Text to React
+Count: 50
+First task_id: 001100
+Last task_id:  001149
+Sample IDs: ['001100', '001101', '001102', '001103', '001104'] ...
+Input type: Text -> Output type: React
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0011': 50}
+
+Task: Text to SVG
+Count: 50
+First task_id: 001200
+Last task_id:  001249
+Sample IDs: ['001200', '001201', '001202', '001203', '001204'] ...
+Input type: Text -> Output type: SVG
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0012': 50}
+
+Task: Text to TOML
+Count: 50
+First task_id: 001000
+Last task_id:  001049
+Sample IDs: ['001000', '001001', '001002', '001003', '001004'] ...
+Input type: Text -> Output type: TOML
+Rendering: False
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0010': 50}
+
+Task: Text to Tikz
+Count: 50
+First task_id: 001300
+Last task_id:  001349
+Sample IDs: ['001300', '001301', '001302', '001303', '001304'] ...
+Input type: Text -> Output type: Tikz
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0013': 50}
+
+Task: Text to Typst
+Count: 50
+First task_id: 001400
+Last task_id:  001449
+Sample IDs: ['001400', '001401', '001402', '001403', '001404'] ...
+Input type: Text -> Output type: Typst
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0014': 50}
+
+Task: Text to Vega
+Count: 50
+First task_id: 001500
+Last task_id:  001549
+Sample IDs: ['001500', '001501', '001502', '001503', '001504'] ...
+Input type: Text -> Output type: Vega
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0015': 50}
+
+Task: Text to Vue
+Count: 50
+First task_id: 001600
+Last task_id:  001649
+Sample IDs: ['001600', '001601', '001602', '001603', '001604'] ...
+Input type: Text -> Output type: Vue
+Rendering: True
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0016': 50}
+
+Task: Text to XML
+Count: 50
+First task_id: 001700
+Last task_id:  001749
+Sample IDs: ['001700', '001701', '001702', '001703', '001704'] ...
+Input type: Text -> Output type: XML
+Rendering: False
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0017': 50}
+
+Task: Text to YAML
+Count: 50
+First task_id: 001800
+Last task_id:  001849
+Sample IDs: ['001800', '001801', '001802', '001803', '001804'] ...
+Input type: Text -> Output type: YAML
+Rendering: False
+2-digit prefixes: {'00': 50}
+4-digit prefixes: {'0018': 50}
+
+Task: XML to CSV
+Count: 50
+First task_id: 170200
+Last task_id:  170249
+Sample IDs: ['170200', '170201', '170202', '170203', '170204'] ...
+Input type: XML -> Output type: CSV
+Rendering: False
+2-digit prefixes: {'17': 50}
+4-digit prefixes: {'1702': 50}
+
+Task: XML to JSON
+Count: 50
+First task_id: 170500
+Last task_id:  170549
+Sample IDs: ['170500', '170501', '170502', '170503', '170504'] ...
+Input type: XML -> Output type: JSON
+Rendering: False
+2-digit prefixes: {'17': 50}
+4-digit prefixes: {'1705': 50}
+
+Task: XML to YAML
+Count: 50
+First task_id: 171800
+Last task_id:  171849
+Sample IDs: ['171800', '171801', '171802', '171803', '171804'] ...
+Input type: XML -> Output type: YAML
+Rendering: False
+2-digit prefixes: {'17': 50}
+4-digit prefixes: {'1718': 50}
+
+Task: YAML to CSV
+Count: 50
+First task_id: 180200
+Last task_id:  180249
+Sample IDs: ['180200', '180201', '180202', '180203', '180204'] ...
+Input type: YAML -> Output type: CSV
+Rendering: False
+2-digit prefixes: {'18': 50}
+4-digit prefixes: {'1802': 50}
+
+Task: YAML to JSON
+Count: 50
+First task_id: 180500
+Last task_id:  180549
+Sample IDs: ['180500', '180501', '180502', '180503', '180504'] ...
+Input type: YAML -> Output type: JSON
+Rendering: False
+2-digit prefixes: {'18': 50}
+4-digit prefixes: {'1805': 50}
+
+Task: YAML to XML
+Count: 50
+First task_id: 181700
+Last task_id:  181749
+Sample IDs: ['181700', '181701', '181702', '181703', '181704'] ...
+Input type: YAML -> Output type: XML
+Rendering: False
+2-digit prefixes: {'18': 50}
+4-digit prefixes: {'1817': 50}
+
+
+====================================================================================================
+OVERALL PATTERN ANALYSIS
+====================================================================================================
+
+Grouping by first 2 digits of task_id:
+
+Prefix '00': 900 samples
+  Input types: {'Text'}
+  Output types: {'Vue', 'YAML', 'Tikz', 'TOML', 'Angular', 'React', 'SVG', 'Matplotlib', 'Latex', 'Vega', 'Canvas', 'JSON', 'HTML', 'Typst', 'Markdown', 'XML', 'CSV', 'Mermaid'}
+  Tasks: 18 different tasks
+  Example IDs: ['000100', '000101', '000102', '000103', '000104']
+
+Prefix '02': 150 samples
+  Input types: {'CSV'}
+  Output types: {'YAML', 'JSON', 'XML'}
+  Tasks: {'CSV to YAML', 'CSV to XML', 'CSV to JSON'}
+  Example IDs: ['020500', '020501', '020502', '020503', '020504']
+
+Prefix '04': 115 samples
+  Input types: {'HTML'}
+  Output types: {'Angular', 'React', 'Vue'}
+  Tasks: {'Convert HTML to Angular', 'Convert HTML to React', 'Convert HTML to Vue'}
+  Example IDs: ['040100', '040101', '040102', '040103', '040104']
+
+Prefix '05': 150 samples
+  Input types: {'JSON'}
+  Output types: {'CSV', 'XML', 'YAML'}
+  Tasks: {'JSON to CSV', 'JSON to XML', 'JSON to YAML'}
+  Example IDs: ['050200', '050201', '050202', '050203', '050204']
+
+Prefix '07': 115 samples
+  Input types: {'Markdown'}
+  Output types: {'Angular', 'React', 'Vue', 'HTML'}
+  Tasks: 4 different tasks
+  Example IDs: ['070100', '070101', '070102', '070103', '070104']
+
+Prefix '08': 100 samples
+  Input types: {'Matplotlib'}
+  Output types: {'TikZ'}
+  Tasks: {'Convert Matplotlib to TikZ'}
+  Example IDs: ['08XX00', '08XX01', '08XX02', '08XX03', '08XX04']
+
+Prefix '10': 100 samples
+  Input types: {'TOML'}
+  Output types: {'YAML', 'JSON'}
+  Tasks: {'TOML to YAML', 'TOML to JSON'}
+  Example IDs: ['100500', '100501', '100502', '100503', '100504']
+
+Prefix '11': 50 samples
+  Input types: {'React'}
+  Output types: {'Angular', 'HTML'}
+  Tasks: {'Convert React to HTML', 'Convert React to Angular'}
+  Example IDs: ['110100', '110101', '110102', '110103', '110104']
+
+Prefix '16': 55 samples
+  Input types: {'Vue'}
+  Output types: {'React', 'HTML'}
+  Tasks: {'Convert Vue to React', 'Convert Vue to HTML'}
+  Example IDs: ['160400', '160401', '160402', '160403', '160404']
+
+Prefix '17': 150 samples
+  Input types: {'XML'}
+  Output types: {'CSV', 'JSON', 'YAML'}
+  Tasks: {'XML to JSON', 'XML to CSV', 'XML to YAML'}
+  Example IDs: ['170200', '170201', '170202', '170203', '170204']
+
+Prefix '18': 150 samples
+  Input types: {'YAML'}
+  Output types: {'CSV', 'JSON', 'XML'}
+  Tasks: {'YAML to CSV', 'YAML to JSON', 'YAML to XML'}
+  Example IDs: ['180200', '180201', '180202', '180203', '180204']
+
+
+====================================================================================================
+PATTERN HYPOTHESIS
+====================================================================================================
+
+Input Type -> First 2 digits mapping:
+  CSV             -> ['02']
+  HTML            -> ['04']
+  JSON            -> ['05']
+  Markdown        -> ['07']
+  Matplotlib      -> ['08']
+  React           -> ['11']
+  TOML            -> ['10']
+  Text            -> ['00']
+  Vue             -> ['16']
+  XML             -> ['17']
+  YAML            -> ['18']
+
+Output Type -> Digits 3-4 mapping:
+  Angular         -> ['01']
+  CSV             -> ['02']
+  Canvas          -> ['03']
+  HTML            -> ['04']
+  JSON            -> ['05']
+  Latex           -> ['XX']
+  Markdown        -> ['07']
+  Matplotlib      -> ['08']
+  Mermaid         -> ['09']
+  React           -> ['11']
+  SVG             -> ['12']
+  TOML            -> ['10']
+  TikZ            -> ['XX']
+  Tikz            -> ['13']
+  Typst           -> ['14']
+  Vega            -> ['15']
+  Vue             -> ['16']
+  XML             -> ['17']
+  YAML            -> ['18']
+
+
+Last 2 digits analysis:
+Unique last 2-digit combinations: 100
+Range: 00 to 99
+Most common last 2 digits:
+  00: 44 times
+  01: 44 times
+  02: 44 times
+  03: 44 times
+  04: 44 times
+  05: 43 times
+  06: 43 times
+  08: 43 times
+  09: 43 times
+  07: 43 times
