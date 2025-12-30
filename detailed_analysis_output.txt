@@ -1,0 +1,1708 @@
+Loading dataset...
+Total samples: 2035
+
+================================================================================
+DETAILED ANALYSIS - RENDERABLE DATA
+================================================================================
+
+================================================================================
+Task: Convert Matplotlib to TikZ
+================================================================================
+Sample count: 100
+
+VQA Questions per sample:
+  Average: 9.4
+  Min: 7
+  Max: 11
+  Median: 10.0
+
+Output metrics per sample:
+  Average: 21.6
+  Min: 8
+  Max: 41
+  Median: 22.0
+
+Query length (characters):
+  Average: 3889
+  Min: 1488
+  Max: 6532
+
+Example sample (task_id: 08XX20):
+  Query (first 200 chars): Please output TikZ:
+
+Task:
+Convert the following Matplotlib code to TikZ code.
+
+<code>
+import matplotlib.pyplot as plt
+import numpy as np
+
+# -----------------------------------------------------
+# SEC...
+
+  VQA Questions (first 3):
+    1. Q: What is the main, bold title displayed at the top of the figure?
+       A: Complex Matplotlib Visualization
+    2. Q: How many subplots are arranged in the grid layout?
+       A: 4
+    3. Q: What is the title of the top-left subplot?
+       A: Trigonometric Functions
+
+  Raw output metrics (10 total):
+    ['Complex Matplotlib Visualization', 'Trigonometric Functions', 'X values', 'Function Values', 'sin(x)', 'cos(x)', 'Noisy Sine Wave', 'Amplitude', 'Clean sin(x)', 'Noisy sin(x)']
+
+================================================================================
+Task: Text to Angular
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 7.2
+  Min: 5
+  Max: 9
+  Median: 7.0
+
+Output metrics per sample:
+  Average: 12.1
+  Min: 7
+  Max: 17
+  Median: 12.0
+
+Query length (characters):
+  Average: 1438
+  Min: 1194
+  Max: 1749
+
+Example sample (task_id: 000100):
+  Query (first 200 chars): Please output Angular code, not HTML code. (Define the component's template and styles inline, Angular code should be self-contained in a single file, do not use any external dependencies or libraries...
+
+  VQA Questions (first 3):
+    1. Q: What is the text displayed in the centered header?
+       A: User Report Dashboard
+    2. Q: How many main sections are present in the layout?
+       A: 2
+    3. Q: What does the first section display?
+       A: A table containing user statistics with 2 rows and 3 columns
+
+  Raw output metrics (13 total):
+    ['User Report Dashboard', 'report-wrapper', 'status-critical', 'Update Report', 'button-area', '<h1>', '<div class="report-wrapper">', '<table>', '<th>', '<p>']
+    ... and 3 more
+
+================================================================================
+Task: Text to Latex
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 7.3
+  Min: 4
+  Max: 8
+  Median: 7.0
+
+Output metrics per sample:
+  Average: 10.1
+  Min: 4
+  Max: 14
+  Median: 10.0
+
+Query length (characters):
+  Average: 1074
+  Min: 846
+  Max: 1265
+
+Example sample (task_id: 00XX20):
+  Query (first 200 chars): Please output Latex:
+
+Task:
+Convert the given plain text description of a statistical concept into a LaTeX formatted representation of a probability density function for the normal distribution.
+
+Feat...
+
+  VQA Questions (first 3):
+    1. Q: Does the rendered output begin with the equation environment declaration and end with its closing tag?
+       A: Yes
+    2. Q: Is the coefficient before the exponential term formatted as a fraction using the fraction command with proper braces?
+       A: Yes
+    3. Q: Is the exponential function represented using the exp command with its exponent enclosed in curly braces?
+       A: Yes
+
+  Raw output metrics (13 total):
+    ['\\begin{equation}', '\\end{equation}', '\\frac', '\\exp', '\\pi', '\\sqrt', 'x', '\\mu', '\\sigma', '(x-\\mu)^2']
+    ... and 3 more
+
+================================================================================
+Task: Text to Markdown
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.2
+  Min: 6
+  Max: 11
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 6.8
+  Min: 4
+  Max: 11
+  Median: 6.5
+
+Query length (characters):
+  Average: 1005
+  Min: 767
+  Max: 1190
+
+Example sample (task_id: 000700):
+  Query (first 200 chars): Please output Markdown:
+
+Task:
+Create a formatted Markdown document outlining a project update meeting agenda for a new product launch.
+
+Feature Requirements:
+- Begin with a centered title using an <h...
+
+  VQA Questions (first 3):
+    1. Q: What is the centered title at the top of the document?
+       A: Project Update Meeting
+    2. Q: What is the text of the h2 element immediately following the title?
+       A: Meeting Agenda
+    3. Q: How many bullet points are listed under the Meeting Agenda section?
+       A: 3
+
+  Raw output metrics (8 total):
+    ['# Project Update Meeting', '## Meeting Agenda', '## Discussion Points', '## Next Steps', '## Summary', '1.', '2.', '3.']
+
+================================================================================
+Task: Text to Matplotlib
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.6
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 14.6
+  Min: 5
+  Max: 25
+  Median: 14.5
+
+Query length (characters):
+  Average: 778
+  Min: 618
+  Max: 953
+
+Example sample (task_id: 000802):
+  Query (first 200 chars): Please output Matplotlib:
+
+Task:
+Generate a Matplotlib scatter plot using predefined data arrays representing wind speed and precipitation levels.
+
+Feature Requirements:
+- Display a scatter plot with ...
+
+  VQA Questions (first 3):
+    1. Q: What is the title displayed at the top of the plot?
+       A: Wind Speed vs Precipitation
+    2. Q: How many data points are plotted in the scatter plot?
+       A: 8
+    3. Q: What label is used for the x-axis?
+       A: Wind Speed (mph)
+
+  Raw output metrics (15 total):
+    ['Wind Speed vs Precipitation', 'Wind Speed (mph)', 'Precipitation (mm)', 'Measurement Data', 'plt.scatter', 'red', "marker='o'", 's=80', 'plt.xlim(0, 100)', 'plt.ylim(0, 50)']
+    ... and 5 more
+
+================================================================================
+Task: Text to React
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.9
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 16.5
+  Min: 12
+  Max: 27
+  Median: 16.0
+
+Query length (characters):
+  Average: 1025
+  Min: 714
+  Max: 1378
+
+Example sample (task_id: 001140):
+  Query (first 200 chars): Please output React:
+
+Task:
+Generate a React component that displays a basic newsletter subscription form.
+
+Feature Requirements:
+- Include a centered header using an <h1> element with the text "Subsc...
+
+  VQA Questions (first 3):
+    1. Q: What is the header text displayed at the top of the form?
+       A: Subscribe to our Newsletter
+    2. Q: How many text input fields are arranged side by side?
+       A: 2
+    3. Q: What is the placeholder text for the first input field?
+       A: Enter First Name
+
+  Raw output metrics (13 total):
+    ['Subscribe to our Newsletter', 'Enter First Name', 'Enter Email Address', 'Subscribe', 'Subscription Successful', 'h1', 'form', 'button', 'div', 'backgroundColor: "green"']
+    ... and 3 more
+
+================================================================================
+Task: Text to SVG
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 7.9
+  Min: 6
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 19.9
+  Min: 12
+  Max: 30
+  Median: 19.5
+
+Query length (characters):
+  Average: 1291
+  Min: 987
+  Max: 1673
+
+Example sample (task_id: 001200):
+  Query (first 200 chars): Please output SVG:
+
+Task:
+Generate an SVG image of a simple house with a roof, door, windows, and a sun in the background.
+
+Feature Requirements:
+- The SVG canvas must have a width and height of 400 p...
+
+  VQA Questions (first 3):
+    1. Q: What are the dimensions of the SVG canvas?
+       A: 400 pixels by 400 pixels
+    2. Q: What are the fill color and border attributes of the house body?
+       A: Filled with light gray (#D3D3D3) and a 2-pixel black border
+    3. Q: How is the house body sized and positioned on the canvas?
+       A: It is a 200x200 pixel square, centered horizontally with its bottom 50 pixels above the bottom edge
+
+  Raw output metrics (20 total):
+    ['<svg', 'width="400"', 'height="400"', '<rect', 'fill="#D3D3D3"', 'stroke="black"', 'stroke-width="2"', '200', '50', '<polygon']
+    ... and 10 more
+
+================================================================================
+Task: Text to Tikz
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.1
+  Min: 6
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 9.1
+  Min: 2
+  Max: 14
+  Median: 9.5
+
+Query length (characters):
+  Average: 969
+  Min: 723
+  Max: 1255
+
+Example sample (task_id: 001302):
+  Query (first 200 chars): Please output Tikz:
+
+Task:
+Generate a Tikz diagram representing a star-inspired node network.
+
+Feature Requirements:
+- Display exactly 8 nodes, one of which is a central node and the remaining 7 evenl...
+
+  VQA Questions (first 3):
+    1. Q: What is the title displayed above the diagram?
+       A: Star Network Diagram
+    2. Q: How many nodes are shown in the diagram?
+       A: 8
+    3. Q: What text is used for the central node's label?
+       A: Center
+
+  Raw output metrics (13 total):
+    ['Star Network Diagram', 'Center', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'blue']
+    ... and 3 more
+
+================================================================================
+Task: Text to HTML
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 6.9
+  Min: 5
+  Max: 10
+  Median: 6.5
+
+Output metrics per sample:
+  Average: 11.9
+  Min: 6
+  Max: 23
+  Median: 12.0
+
+Query length (characters):
+  Average: 882
+  Min: 693
+  Max: 1183
+
+Example sample (task_id: 000400):
+  Query (first 200 chars): Please output HTML:
+
+Task:
+Generate an HTML page that transforms a short narrative about a notable scientific discovery into a structured document.
+
+Feature Requirements:
+- Include a main title using ...
+
+  VQA Questions (first 3):
+    1. Q: What is the main title displayed at the top of the page?
+       A: Discovery Overview
+    2. Q: Which element immediately follows the main title to present the narrative text?
+       A: A paragraph element
+    3. Q: What is the text shown as the subheading below the horizontal line?
+       A: Event Details
+
+  Raw output metrics (15 total):
+    ['Discovery Overview', 'Event Details', 'Date of Discovery', 'Location', 'Research Team', 'Document End', '<h1>', '<p>', '<hr>', '<h2>']
+    ... and 5 more
+
+================================================================================
+Task: Text to Mermaid
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.6
+  Min: 7
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 12.8
+  Min: 8
+  Max: 18
+  Median: 13.0
+
+Query length (characters):
+  Average: 1026
+  Min: 740
+  Max: 1294
+
+Example sample (task_id: 000903):
+  Query (first 200 chars): Please output Mermaid:
+
+Task:
+Convert a textual description of an organization hierarchy into a Mermaid flowchart diagram.
+
+Feature Requirements:
+- Include a title at the top of the flowchart labeled ...
+
+  VQA Questions (first 3):
+    1. Q: What is the title at the top of the flowchart?
+       A: Organization Hierarchy
+    2. Q: How many main department branches are displayed?
+       A: 4
+    3. Q: What shape is used for the CEO node?
+       A: Circular
+
+  Raw output metrics (12 total):
+    ['graph TD', 'Organization Hierarchy', '((CEO))', '[Department 1]', '[Department 2]', '[Department 3]', '[Department 4]', 'Team Lead', '-->', 'style']
+    ... and 2 more
+
+================================================================================
+Task: Text to Typst
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.3
+  Min: 6
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 6.5
+  Min: 4
+  Max: 10
+  Median: 6.0
+
+Query length (characters):
+  Average: 1274
+  Min: 1060
+  Max: 1492
+
+Example sample (task_id: 001401):
+  Query (first 200 chars): Please output Typst code that can be directly compiled by Typst CLI compiler to PDF (Use markdown-like typst syntax style, do not have any advanced usage such as variables):
+
+Task:
+Convert a brief tex...
+
+  VQA Questions (first 3):
+    1. Q: What is the main title displayed at the top of the document?
+       A: Magazine Feature
+    2. Q: What is the level-2 heading in the first section?
+       A: Article Summary
+    3. Q: How many bullet points are listed under the 'Interview' subsection?
+       A: 4
+
+  Raw output metrics (6 total):
+    ['Magazine Feature', 'Article Summary', 'Interview', 'Insights', 'Additional Details', '© 2023 Magazine']
+
+================================================================================
+Task: Text to Vega
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.4
+  Min: 6
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 7.7
+  Min: 1
+  Max: 18
+  Median: 8.0
+
+Query length (characters):
+  Average: 1007
+  Min: 783
+  Max: 1323
+
+Example sample (task_id: 001502):
+  Query (first 200 chars): Please output Vega:
+
+Task:
+Create a Vega specification for a line chart visualization tracking the monthly average temperatures in several fictional cities.
+
+Feature Requirements:
+- Include a title wi...
+
+  VQA Questions (first 3):
+    1. Q: What is the chart title displayed at the top?
+       A: Fictional City Temperature Trends
+    2. Q: How many distinct lines representing fictional cities are plotted?
+       A: 3
+    3. Q: Are the colors for each line unique?
+       A: Yes
+
+  Raw output metrics (1 total):
+    ['Fictional City Temperature Trends']
+
+================================================================================
+Task: Text to Vue
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 6.4
+  Min: 4
+  Max: 9
+  Median: 6.0
+
+Output metrics per sample:
+  Average: 9.2
+  Min: 6
+  Max: 13
+  Median: 9.0
+
+Query length (characters):
+  Average: 1175
+  Min: 910
+  Max: 1479
+
+Example sample (task_id: 001600):
+  Query (first 200 chars): Please output Vue code in the format of Single File Components (SFC):
+
+Task:
+Convert a plain text event schedule into a Vue component that displays a timeline of events.
+
+Feature Requirements:
+- Rende...
+
+  VQA Questions (first 3):
+    1. Q: What does the header at the top of the component display?
+       A: Event Timeline
+    2. Q: What is the placeholder text for the event title input?
+       A: Enter event title
+    3. Q: What is the placeholder text for the event time input?
+       A: Enter event time
+
+  Raw output metrics (6 total):
+    ['Event Timeline', 'event-item', 'Remove Event', 'Enter event title', 'Enter event time', 'Add Event']
+
+================================================================================
+Task: Convert Markdown to HTML
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 8.8
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 19.8
+  Min: 10
+  Max: 36
+  Median: 19.0
+
+Query length (characters):
+  Average: 4054
+  Min: 2470
+  Max: 5608
+
+Example sample (task_id: 070402):
+  Query (first 200 chars): Please output HTML:
+
+Task:
+Convert the following Markdown code to HTML code.
+
+<code>
+# Markdown Layout Test Project
+
+Welcome to this test document designed to evaluate the structure, visual hierarchy,...
+
+  VQA Questions (first 3):
+    1. Q: What is the main title displayed on the page?
+       A: Markdown Layout Test Project
+    2. Q: How many main sections are listed in the Table of Contents?
+       A: 5
+    3. Q: Which type of list is used for the Table of Contents?
+       A: Numbered list
+
+  Raw output metrics (16 total):
+    ['Markdown Layout Test Project', 'Table of Contents', 'Overview', 'Detailed Description', 'Technical Specifications', 'Statistics', 'Conclusions', 'Key Features', 'Features List', 'Attribute']
+    ... and 6 more
+
+================================================================================
+Task: Text to Canvas
+================================================================================
+Sample count: 50
+
+VQA Questions per sample:
+  Average: 7.9
+  Min: 5
+  Max: 11
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 9.6
+  Min: 2
+  Max: 16
+  Median: 9.0
+
+Query length (characters):
+  Average: 1118
+  Min: 759
+  Max: 1486
+
+Example sample (task_id: 000300):
+  Query (first 200 chars): Please output Canvas:
+
+Task:
+Render a digital recipe card entirely using a canvas element for everything visible.
+
+Feature Requirements:
+- Create a single canvas element with dimensions of 800x600 pix...
+
+  VQA Questions (first 3):
+    1. Q: What is the centered title at the top?
+       A: Grandma's Apple Pie
+    2. Q: What font style is used for the title?
+       A: Bold
+    3. Q: Is there a line drawn under the title spanning the full width?
+       A: Yes
+
+  Raw output metrics (10 total):
+    ['800', '600', "Grandma's Apple Pie", 'fillText', 'moveTo', 'lineTo', '-', '1', '2', '3']
+
+================================================================================
+Task: Convert React to HTML
+================================================================================
+Sample count: 45
+
+VQA Questions per sample:
+  Average: 9.1
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 21.7
+  Min: 5
+  Max: 39
+  Median: 22.0
+
+Query length (characters):
+  Average: 3528
+  Min: 1831
+  Max: 4823
+
+Example sample (task_id: 110411):
+  Query (first 200 chars): Please output HTML:
+
+Task:
+Convert the following React code to HTML code.
+
+<code>
+import React from 'react';
+
+function Header() {
+  return (
+    <header style={{ padding: '20px', background: '#f2f2f2'...
+
+  VQA Questions (first 3):
+    1. Q: What is the text of the main header (h1)?
+       A: Application Dashboard
+    2. Q: How many items are in the navigation menu?
+       A: 4
+    3. Q: What are the navigation menu items?
+       A: Home, Profile, Settings, About
+
+  Raw output metrics (32 total):
+    ['Application Dashboard', 'Home', 'Profile', 'Settings', 'About', 'Profile Overview', 'Name: Jane Doe', 'Email: jane.doe@example.com', 'Member Since: March 2018', 'Statistics']
+    ... and 22 more
+
+================================================================================
+Task: Convert HTML to React
+================================================================================
+Sample count: 45
+
+VQA Questions per sample:
+  Average: 9.3
+  Min: 8
+  Max: 12
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 21.8
+  Min: 11
+  Max: 45
+  Median: 20.0
+
+Query length (characters):
+  Average: 3969
+  Min: 2728
+  Max: 5804
+
+Example sample (task_id: 041100):
+  Query (first 200 chars): Please output React:
+
+Task:
+Convert the following HTML code to React code.
+
+<code><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Visual Conversion Test Page</title>
+  </head>
+  ...
+
+  VQA Questions (first 3):
+    1. Q: What is the main heading text displayed at the top of the page?
+       A: Main Title: Visual Conversion Test
+    2. Q: What items appear in the navigation menu?
+       A: Home, About, Services, Contact
+    3. Q: What is the heading for the introduction section?
+       A: Introduction
+
+  Raw output metrics (31 total):
+    ['Main Title: Visual Conversion Test', 'Home', 'About', 'Services', 'Contact', 'Introduction', 'Content Overview', 'Article 1: Basics of HTML Structure', 'Article 2: Detailed Formatting', 'Additional Information']
+    ... and 21 more
+
+================================================================================
+Task: Convert Vue to HTML
+================================================================================
+Sample count: 40
+
+VQA Questions per sample:
+  Average: 8.7
+  Min: 7
+  Max: 11
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 20.5
+  Min: 11
+  Max: 37
+  Median: 20.0
+
+Query length (characters):
+  Average: 5191
+  Min: 3280
+  Max: 9764
+
+Example sample (task_id: 160400):
+  Query (first 200 chars): Please output HTML:
+
+Task:
+Convert the following Vue code to HTML code.
+
+<code>
+<template>
+  <div class="container">
+    <header class="header">
+      <h1>Dashboard Overview</h1>
+      <p>Welcome to t...
+
+  VQA Questions (first 3):
+    1. Q: What is the text of the large heading in the header section?
+       A: Dashboard Overview
+    2. Q: What is the purpose of the descriptive paragraph in the header section?
+       A: Welcoming the user
+    3. Q: What is the heading in the summary section?
+       A: Summary
+
+  Raw output metrics (27 total):
+    ['container', 'header', 'Dashboard Overview', 'summary', 'Summary', 'stats', 'Total Users', 'Active Sessions', 'New Registrations', 'details']
+    ... and 17 more
+
+================================================================================
+Task: Convert HTML to Vue
+================================================================================
+Sample count: 40
+
+VQA Questions per sample:
+  Average: 8.9
+  Min: 4
+  Max: 11
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 21.8
+  Min: 7
+  Max: 48
+  Median: 20.5
+
+Query length (characters):
+  Average: 3984
+  Min: 1403
+  Max: 6740
+
+Example sample (task_id: 041600):
+  Query (first 200 chars): Please output Vue code in the format of Single File Components (SFC):
+
+Task:
+Convert the following HTML code to Vue code.
+
+<code>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+ ...
+
+  VQA Questions (first 3):
+    1. Q: What is the header title displayed at the top of the page?
+       A: Welcome to Our HTML Layout Example
+    2. Q: How many navigation menu items are rendered in the layout?
+       A: 5
+    3. Q: Which section headers are visible in the main content area?
+       A: Introduction, Key Features, Meet the Team, Supporting Statistics, Contact Details
+
+  Raw output metrics (21 total):
+    ['Welcome to Our HTML Layout Example', 'Introduction', 'Features', 'Team', 'Statistics', 'Contact Details', 'About This Document', 'Key Features', 'Structured Content', 'Consistent Hierarchy']
+    ... and 11 more
+
+================================================================================
+Task: Convert Markdown to React
+================================================================================
+Sample count: 30
+
+VQA Questions per sample:
+  Average: 9.1
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 26.0
+  Min: 12
+  Max: 44
+  Median: 24.5
+
+Query length (characters):
+  Average: 4222
+  Min: 2064
+  Max: 6073
+
+Example sample (task_id: 071111):
+  Query (first 200 chars): Please output React:
+
+Task:
+Convert the following Markdown code to React code.
+
+<code>
+# Project Vision Document
+
+Welcome to the *Project Vision Document*. This document outlines the overall structure...
+
+  VQA Questions (first 3):
+    1. Q: What is the main heading text displayed at the top of the document?
+       A: Project Vision Document
+    2. Q: How is the project title styled in the introductory welcome text?
+       A: Italicized
+    3. Q: Are horizontal rules present to divide the major sections of the document?
+       A: Yes
+
+  Raw output metrics (13 total):
+    ['Project Vision Document', '1. Overview', '2. System Architecture', '3. Detailed Structure', '4. Labeled Data Table', '5. Example Code Block', '6. Summary', '1.1 Objectives', '1.2 Scope', '2.1 Main Components']
+    ... and 3 more
+
+================================================================================
+Task: Convert HTML to Angular
+================================================================================
+Sample count: 30
+
+VQA Questions per sample:
+  Average: 8.5
+  Min: 6
+  Max: 10
+  Median: 8.5
+
+Output metrics per sample:
+  Average: 28.5
+  Min: 14
+  Max: 66
+  Median: 24.0
+
+Query length (characters):
+  Average: 4411
+  Min: 2841
+  Max: 10043
+
+Example sample (task_id: 040102):
+  Query (first 200 chars): Please output Angular code, not HTML code. (Define the component's template and styles inline, Angular code should be self-contained in a single file, do not use any external dependencies or libraries...
+
+  VQA Questions (first 3):
+    1. Q: What is the main heading displayed in the header section?
+       A: Welcome to the Sample Structure Page
+    2. Q: How many items are shown in the navigation menu?
+       A: 4
+    3. Q: What labels are used in the navigation menu?
+       A: Home, About, Services, Contact
+
+  Raw output metrics (22 total):
+    ['Welcome to the Sample Structure Page', 'Home', 'About', 'Services', 'Contact', 'Introduction', 'Clear visual structure', 'Organized layout', 'Readable content', 'Article 1: Background']
+    ... and 12 more
+
+================================================================================
+Task: Convert Markdown to Vue
+================================================================================
+Sample count: 25
+
+VQA Questions per sample:
+  Average: 9.0
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 25.0
+  Min: 12
+  Max: 49
+  Median: 24.0
+
+Query length (characters):
+  Average: 4367
+  Min: 3030
+  Max: 5310
+
+Example sample (task_id: 071600):
+  Query (first 200 chars): Please output Vue code in the format of Single File Components (SFC):
+
+Task:
+Convert the following Markdown code to Vue code.
+
+<code>
+# Project Title: Markdown Document for Visual Conversion Test
+
+## ...
+
+  VQA Questions (first 3):
+    1. Q: What is the text of the prominent project title section?
+       A: Project Title: Markdown Document for Visual Conversion Test
+    2. Q: Which sections are listed in the Table of Contents?
+       A: Introduction, Layout and Structure, Data and Content, Detailed Steps, Summary, Appendix
+    3. Q: Does the Introduction section include bold text elements?
+       A: Yes
+
+  Raw output metrics (21 total):
+    ['Project Title: Markdown Document for Visual Conversion Test', 'Table of Contents', 'Introduction', 'Layout and Structure', 'Data and Content', 'Detailed Steps', 'Summary', 'Appendix', 'headings', 'lists']
+    ... and 11 more
+
+================================================================================
+Task: Convert Vue to React
+================================================================================
+Sample count: 15
+
+VQA Questions per sample:
+  Average: 8.8
+  Min: 7
+  Max: 10
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 19.3
+  Min: 10
+  Max: 26
+  Median: 19.0
+
+Query length (characters):
+  Average: 4468
+  Min: 3282
+  Max: 5587
+
+Example sample (task_id: 161101):
+  Query (first 200 chars): Please output React:
+
+Task:
+Convert the following Vue code to React code.
+
+<code>
+<template>
+  <div id="app">
+    <header>
+      <h1>My Vue Visual Layout</h1>
+      <p>This page demonstrates a detaile...
+
+  VQA Questions (first 3):
+    1. Q: What is the main title in the header section?
+       A: My Vue Visual Layout
+    2. Q: What is the descriptive paragraph below the main title?
+       A: A descriptive paragraph about the visual layout.
+    3. Q: What is the heading title for the Overview section?
+       A: Overview
+
+  Raw output metrics (23 total):
+    ['My Vue Visual Layout', 'Overview', 'Introduction', 'Details', 'Summary', 'Purpose: To test structural layout', 'Focus: Visible structure and formatted content', 'Constraints: No external resources, only valid Vue code', 'Section Details', 'Label']
+    ... and 13 more
+
+================================================================================
+Task: Convert Markdown to Angular
+================================================================================
+Sample count: 10
+
+VQA Questions per sample:
+  Average: 8.5
+  Min: 7
+  Max: 10
+  Median: 8.0
+
+Output metrics per sample:
+  Average: 28.3
+  Min: 15
+  Max: 45
+  Median: 24.5
+
+Query length (characters):
+  Average: 4585
+  Min: 3940
+  Max: 5446
+
+Example sample (task_id: 070100):
+  Query (first 200 chars): Please output Angular code, not HTML code. (Define the component's template and styles inline, Angular code should be self-contained in a single file, do not use any external dependencies or libraries...
+
+  VQA Questions (first 3):
+    1. Q: What is the main title displayed at the top?
+       A: Project Documentation
+    2. Q: Which items are listed in the Table of Contents in numerical order?
+       A: Introduction, Architecture Overview, Data Model, Installation, Usage, Troubleshooting, License
+    3. Q: What is the sub-section title within the Introduction section?
+       A: Key Features
+
+  Raw output metrics (33 total):
+    ['Project Documentation', 'Table of Contents', 'Introduction', 'Architecture Overview', 'Data Model', 'Installation', 'Usage', 'Troubleshooting', 'License', 'Key Features']
+    ... and 23 more
+
+================================================================================
+Task: Convert React to Angular
+================================================================================
+Sample count: 5
+
+VQA Questions per sample:
+  Average: 9.2
+  Min: 8
+  Max: 12
+  Median: 9.0
+
+Output metrics per sample:
+  Average: 22.0
+  Min: 10
+  Max: 27
+  Median: 23.0
+
+Query length (characters):
+  Average: 3178
+  Min: 2271
+  Max: 4613
+
+Example sample (task_id: 110101):
+  Query (first 200 chars): Please output Angular code, not HTML code. (Define the component's template and styles inline, Angular code should be self-contained in a single file, do not use any external dependencies or libraries...
+
+  VQA Questions (first 3):
+    1. Q: What is the header title displayed at the top of the container?
+       A: Dashboard Overview
+    2. Q: What welcome message appears below the header title?
+       A: Welcome to your main dashboard view.
+    3. Q: What is the title of the main section's summary?
+       A: Summary
+
+  Raw output metrics (10 total):
+    ['Dashboard Overview', 'Welcome to your main dashboard view.', 'Summary', 'Total Users', 'Active Sessions', 'Revenue', '1,234', '567', '$8,910', 'Recent Activities']
+
+
+================================================================================
+DETAILED ANALYSIS - NON-RENDERABLE DATA
+================================================================================
+
+================================================================================
+Task: CSV to JSON
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 16.4
+  Min: 12
+  Max: 24
+  Median: 15.0
+
+Query length (characters):
+  Average: 810
+  Min: 468
+  Max: 2015
+
+Example sample (task_id: 020500):
+  Query (first 200 chars): Please convert the following CSV code to JSON code.\n\n<code>planet_name,system.star_name,system.distance_from_earth_ly,system.discovery.year,system.discovery.method,atmosphere.composition,atmosphere....
+
+  Raw output metrics (14 total):
+    ['planet_name', 'system.star_name', 'system.distance_from_earth_ly', 'system.discovery.year', 'system.discovery.method', 'atmosphere.composition.*.gas', 'atmosphere.composition.*.percentage', 'atmosphere.pressure_atm', 'moons.*.name', 'moons.*.diameter_km']
+    ... and 4 more
+
+================================================================================
+Task: CSV to XML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 14.6
+  Min: 10
+  Max: 23
+  Median: 14.0
+
+Query length (characters):
+  Average: 707
+  Min: 471
+  Max: 1407
+
+Example sample (task_id: 021700):
+  Query (first 200 chars): Please convert the following CSV code to XML code.\n\n<code>galaxy.name,galaxy.type,galaxy.distance_light_years,galaxy.discovery.year,galaxy.discovery.astronomer,galaxy.discovery.telescope,galaxy.star...
+
+  Raw output metrics (11 total):
+    ['galaxy.name', 'galaxy.type', 'galaxy.distance_light_years', 'galaxy.discovery.year', 'galaxy.discovery.astronomer', 'galaxy.discovery.telescope', 'galaxy.star_systems.*.system_name', 'galaxy.star_systems.*.planets', 'galaxy.star_systems.*.habitable_zone', 'galaxy.star_systems.*.notable_events.*.event_name']
+    ... and 1 more
+
+================================================================================
+Task: CSV to YAML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 15.7
+  Min: 11
+  Max: 24
+  Median: 16.0
+
+Query length (characters):
+  Average: 688
+  Min: 492
+  Max: 1035
+
+Example sample (task_id: 021800):
+  Query (first 200 chars): Please convert the following CSV code to YAML code.\n\n<code>planet_name,system.star_name,system.distance_from_earth_ly,system.discovery.year,system.discovery.method,atmosphere.composition,atmosphere....
+
+  Raw output metrics (19 total):
+    ['planet_name', 'system.star_name', 'system.distance_from_earth_ly', 'system.discovery.year', 'system.discovery.method', 'atmosphere.composition', 'atmosphere.pressure', 'atmosphere.layers[0].name', 'atmosphere.layers[0].altitude_range_km', 'atmosphere.layers[1].name']
+    ... and 9 more
+
+================================================================================
+Task: JSON to CSV
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 6.2
+  Min: 6
+  Max: 7
+  Median: 6.0
+
+Query length (characters):
+  Average: 1320
+  Min: 1061
+  Max: 1667
+
+Example sample (task_id: 050200):
+  Query (first 200 chars): Please convert the following JSON code to CSV code (Only output the CSV content as plain text, starting with the header row.):.\n\n<code>[
+  {"PotionName": "Moonlit Mirage", "Color": "Iridescent Blue"...
+
+  Raw output metrics (6 total):
+    ['csv::PotionName', 'csv::Color', 'csv::PotencyLevel', 'csv::BrewDate', 'csv::IngredientCount', 'csv::IsExplosive']
+
+================================================================================
+Task: JSON to XML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 7.4
+  Min: 3
+  Max: 13
+  Median: 8.5
+
+Query length (characters):
+  Average: 631
+  Min: 371
+  Max: 995
+
+Example sample (task_id: 051700):
+  Query (first 200 chars): Please convert the following JSON code to XML code.\n\n<code>{
+  "library": {
+    "name": "The Clockwork Library",
+    "location": {
+      "city": "Gearspring",
+      "country": "Steamlantis"
+    },
+ ...
+
+  Raw output metrics (11 total):
+    ['library.name', 'library.location.city', 'library.location.country', 'library.sections.section[0].title', 'library.sections.section[0].books.book[0].title', 'library.sections.section[0].books.book[0].author', 'library.sections.section[0].books.book[1].title', 'library.sections.section[0].books.book[1].author', 'library.sections.section[1].title', 'library.sections.section[1].books.book[0].title']
+    ... and 1 more
+
+================================================================================
+Task: JSON to YAML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 20.3
+  Min: 14
+  Max: 30
+  Median: 20.0
+
+Query length (characters):
+  Average: 960
+  Min: 625
+  Max: 1630
+
+Example sample (task_id: 051800):
+  Query (first 200 chars): Please convert the following JSON code to YAML code.\n\n<code>{
+  "planet": {
+    "name": "Zyphora-9",
+    "galaxy": "Andromeda",
+    "population": 1200000000,
+    "atmosphere": {
+      "composition":...
+
+  Raw output metrics (17 total):
+    ['planet.name', 'planet.galaxy', 'planet.population', 'planet.atmosphere.composition', 'planet.atmosphere.pressure', 'planet.climate.temperature.average', 'planet.climate.temperature.extremes.high', 'planet.climate.temperature.extremes.low', 'planet.climate.weather_patterns', 'planet.moons[0].name']
+    ... and 7 more
+
+================================================================================
+Task: TOML to JSON
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 17.5
+  Min: 12
+  Max: 25
+  Median: 18.0
+
+Query length (characters):
+  Average: 713
+  Min: 497
+  Max: 1113
+
+Example sample (task_id: 100500):
+  Query (first 200 chars): Please convert the following TOML code to JSON code.\n\n<code>
+[spaceship]
+name = "Starfire Odyssey"
+class = "Explorer"
+
+[spaceship.crew]
+captain = "Zara Quell"
+first_officer = "Milo Jax"
+
+[[spaceship...
+
+  Raw output metrics (19 total):
+    ['spaceship.name', 'spaceship.class', 'spaceship.crew.captain', 'spaceship.crew.first_officer', 'spaceship.crew.engineers', 'spaceship.crew.engineers[0].name', 'spaceship.crew.engineers[0].species', 'spaceship.crew.engineers[1].name', 'spaceship.crew.engineers[1].species', 'spaceship.missions[0].destination']
+    ... and 9 more
+
+================================================================================
+Task: TOML to YAML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 19.3
+  Min: 12
+  Max: 26
+  Median: 19.5
+
+Query length (characters):
+  Average: 755
+  Min: 500
+  Max: 1089
+
+Example sample (task_id: 101800):
+  Query (first 200 chars): Please convert the following TOML code to YAML code.\n\n<code>
+[space_station]
+name = "Celestial Haven"
+last_contact = 2024-06-01T14:32:00Z
+
+[space_station.location]
+planet = "Europa"
+
+[space_station....
+
+  Raw output metrics (18 total):
+    ['space_station.name', 'space_station.location.planet', 'space_station.location.coordinates.latitude', 'space_station.location.coordinates.longitude', 'space_station.modules[0].type', 'space_station.modules[0].status', 'space_station.modules[0].crew[0].name', 'space_station.modules[0].crew[0].role', 'space_station.modules[0].crew[0].species', 'space_station.modules[1].type']
+    ... and 8 more
+
+================================================================================
+Task: Text to CSV
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 15.9
+  Min: 15
+  Max: 19
+  Median: 15.0
+
+Query length (characters):
+  Average: 2164
+  Min: 1687
+  Max: 2815
+
+Example sample (task_id: 000200):
+  Query (first 200 chars): Please output CSV code(Only output the CSV content as plain text, starting with the header row.):
+
+Task:
+Given a textual description of a unique recipe, generate a CSV row representing its core attrib...
+
+  Raw output metrics (17 total):
+    ['csv::recipe_id', 'csv::recipe_name', 'csv::chef_name', 'csv::cuisine_type', 'csv::prep_time_minutes', 'csv::cook_time_minutes', 'csv::difficulty_level', 'csv::ingredient_list', 'csv::ingredient_quantities', 'csv::ingredient_units']
+    ... and 7 more
+
+================================================================================
+Task: Text to JSON
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 15.9
+  Min: 15
+  Max: 19
+  Median: 15.0
+
+Query length (characters):
+  Average: 2465
+  Min: 1887
+  Max: 3117
+
+Example sample (task_id: 000500):
+  Query (first 200 chars): Please output JSON code:
+
+Task:
+Given a summary of a fictional novel, extract a structured representation of its key metadata, main characters, and chapter details.
+
+Feature Requirements:
+1. The field...
+
+  Raw output metrics (17 total):
+    ['novel.title', 'novel.author.name', 'novel.author.birth_year', 'novel.publication.year', 'novel.publication.publisher', 'novel.genres', 'novel.characters[0].name', 'novel.characters[0].role', 'novel.characters[0].traits', 'novel.characters[1].name']
+    ... and 7 more
+
+================================================================================
+Task: Text to TOML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 16.0
+  Min: 15
+  Max: 19
+  Median: 16.0
+
+Query length (characters):
+  Average: 2467
+  Min: 1904
+  Max: 2935
+
+Example sample (task_id: 001000):
+  Query (first 200 chars): Please output TOML code:
+
+Task:
+Given a description of a fictional museum, produce a TOML document representing its structure, including details about its director, location, galleries, and artworks.
+...
+
+  Raw output metrics (15 total):
+    ['museum.name', 'museum.location.city', 'museum.location.country', 'museum.founded_year', 'museum.director.full_name', 'museum.director.tenure_years', 'museum.galleries[0].title', 'museum.galleries[0].floor', 'museum.galleries[0].artworks[0].title', 'museum.galleries[0].artworks[0].artist']
+    ... and 5 more
+
+================================================================================
+Task: Text to XML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 15.9
+  Min: 15
+  Max: 19
+  Median: 15.5
+
+Query length (characters):
+  Average: 2298
+  Min: 1896
+  Max: 2784
+
+Example sample (task_id: 001700):
+  Query (first 200 chars): Please output XML code:
+
+Task:
+Generate an XML representation of a creative recipe, including all details about the recipe, its author, ingredients, preparation steps, nutritional information, tags, a...
+
+  Raw output metrics (15 total):
+    ['recipe.title', 'recipe.author.name', 'recipe.author.contact.email', 'recipe.ingredients.*.name', 'recipe.ingredients.*.quantity', 'recipe.ingredients.*.unit', 'recipe.steps.*.order', 'recipe.steps.*.instruction', 'recipe.steps.*.duration.minutes', 'recipe.nutrition.calories']
+    ... and 5 more
+
+================================================================================
+Task: Text to YAML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 15.9
+  Min: 15
+  Max: 19
+  Median: 15.0
+
+Query length (characters):
+  Average: 2477
+  Min: 1911
+  Max: 3279
+
+Example sample (task_id: 001800):
+  Query (first 200 chars): Please output YAML code:
+
+Task:
+Describe a fictional creature, including its key characteristics, abilities, and discovery details.
+
+Feature Requirements:
+1. The field name under creature represents t...
+
+  Raw output metrics (17 total):
+    ['creature.name', 'creature.species', 'creature.habitat.type', 'creature.habitat.region', 'creature.habitat.climate', 'creature.abilities[0].name', 'creature.abilities[0].description', 'creature.abilities[0].cooldown_seconds', 'creature.abilities[1].name', 'creature.abilities[1].description']
+    ... and 7 more
+
+================================================================================
+Task: XML to CSV
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 6.2
+  Min: 6
+  Max: 7
+  Median: 6.0
+
+Query length (characters):
+  Average: 1737
+  Min: 1353
+  Max: 2079
+
+Example sample (task_id: 170200):
+  Query (first 200 chars): Please convert the following XML code to CSV code (Only output the CSV content as plain text, starting with the header row.):.\n\n<code>
+<stars>
+  <row>
+    <Constellation>Orion</Constellation>
+    <S...
+
+  Raw output metrics (6 total):
+    ['csv::Constellation', 'csv::StarName', 'csv::ApparentMagnitude', 'csv::DiscoveryDate', 'csv::SpectralType', 'csv::DistanceLY']
+
+================================================================================
+Task: XML to JSON
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 5.4
+  Min: 4
+  Max: 10
+  Median: 5.0
+
+Query length (characters):
+  Average: 776
+  Min: 415
+  Max: 1318
+
+Example sample (task_id: 170500):
+  Query (first 200 chars): Please convert the following XML code to JSON code.\n\n<code>
+<galaxy>
+  <name>Andromeda</name>
+  <starSystems>
+    <starSystem>
+      <systemName>Alpha Centauri</systemName>
+      <planets>
+        <...
+
+  Raw output metrics (4 total):
+    ['galaxy.name', 'galaxy.starSystems[0].systemName', 'galaxy.starSystems[0].planets[0].planetName', 'galaxy.starSystems[0].planets[0].moons[0]']
+
+================================================================================
+Task: XML to YAML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 6.4
+  Min: 3
+  Max: 10
+  Median: 6.0
+
+Query length (characters):
+  Average: 699
+  Min: 438
+  Max: 1269
+
+Example sample (task_id: 171800):
+  Query (first 200 chars): Please convert the following XML code to YAML code.\n\n<code>
+<galacticZoo>
+  <animals>
+    <animal>
+      <name>Zylox</name>
+      <species>Plasma Lynx</species>
+      <origin>
+        <planet>Xenora...
+
+  Raw output metrics (5 total):
+    ['galacticZoo.animals[0].name', 'galacticZoo.animals[0].species', 'galacticZoo.animals[0].origin.planet', 'galacticZoo.animals[1].name', 'galacticZoo.animals[1].origin.galaxy']
+
+================================================================================
+Task: YAML to CSV
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 6.1
+  Min: 6
+  Max: 7
+  Median: 6.0
+
+Query length (characters):
+  Average: 1130
+  Min: 957
+  Max: 1356
+
+Example sample (task_id: 180200):
+  Query (first 200 chars): Please convert the following YAML code to CSV code (Only output the CSV content as plain text, starting with the header row.):.\n\n<code>
+- artifact_name: Nebulite Chalice
+  discovery_year: 2187
+  pla...
+
+  Raw output metrics (6 total):
+    ['csv::artifact_name', 'csv::discovery_year', 'csv::planet_of_origin', 'csv::material', 'csv::estimated_value_millions', 'csv::last_auction_date']
+
+================================================================================
+Task: YAML to JSON
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 21.5
+  Min: 12
+  Max: 28
+  Median: 21.0
+
+Query length (characters):
+  Average: 810
+  Min: 563
+  Max: 1128
+
+Example sample (task_id: 180500):
+  Query (first 200 chars): Please convert the following YAML code to JSON code.\n\n<code>
+spaceship:
+  name: Starfire Voyager
+  model: SV-2024X
+  crew:
+    captain: Zara Elan
+    first_officer: Milo Trent
+    engineers:
+      -...
+
+  Raw output metrics (21 total):
+    ['spaceship.name', 'spaceship.model', 'spaceship.crew.captain', 'spaceship.crew.first_officer', 'spaceship.crew.engineers[0].name', 'spaceship.crew.engineers[0].specialty', 'spaceship.crew.engineers[1].name', 'spaceship.crew.engineers[1].specialty', 'spaceship.specs.length_m', 'spaceship.specs.mass_tons']
+    ... and 11 more
+
+================================================================================
+Task: YAML to XML
+================================================================================
+Sample count: 50
+VQA: Not applicable (non-renderable)
+
+Output metrics per sample:
+  Average: 5.9
+  Min: 3
+  Max: 11
+  Median: 5.0
+
+Query length (characters):
+  Average: 460
+  Min: 286
+  Max: 782
+
+Example sample (task_id: 181700):
+  Query (first 200 chars): Please convert the following YAML code to XML code.\n\n<code>galacticCarnival:
+  rides:
+    ride:
+      - name: Nebula Spinner
+        type: rollercoaster
+        capacity: 24
+      - name: Meteor Dro...
+
+  Raw output metrics (6 total):
+    ['galacticCarnival.rides.ride.name', 'galacticCarnival.rides.ride.type', 'galacticCarnival.rides.ride.capacity', 'galacticCarnival.cottonCandyFlavors.flavor', 'galacticCarnival.mascots.mascot.name', 'galacticCarnival.mascots.mascot.species']
+
+
+================================================================================
+VQA PATTERN ANALYSIS (Renderable only)
+================================================================================
+
+Total VQA questions: 9032
+
+Top question starter words:
+  what: 4995 (55.3%)
+  how: 2142 (23.7%)
+  which: 627 (6.9%)
+  is: 397 (4.4%)
+  are: 356 (3.9%)
+  does: 188 (2.1%)
+  where: 169 (1.9%)
+  in: 45 (0.5%)
+  do: 37 (0.4%)
+  at: 20 (0.2%)
+  under: 10 (0.1%)
+  if: 6 (0.1%)
+  list: 6 (0.1%)
+  can: 5 (0.1%)
+  into: 5 (0.1%)
+
+Answer type distribution:
+  short_phrase: 3688 (40.8%)
+  long_answer: 2463 (27.3%)
+  single_word: 1535 (17.0%)
+  numeric: 1346 (14.9%)
+
+================================================================================
+METRIC ANALYSIS
+================================================================================
+
+Renderable metrics:
+  Total metrics across all samples: 16848
+  Unique metrics: 7255
+  Average per sample: 15.5
+
+  Top 20 most common metrics:
+    Introduction: 168
+    Table of Contents: 95
+    Description: 92
+    Value: 91
+    Overview: 84
+    Features: 84
+    green: 77
+    <p>: 73
+    <h1>: 70
+    <hr>: 68
+    red: 68
+    Contact: 67
+    blue: 66
+    Contact Information: 66
+    Home: 60
+    Usage: 60
+    Dashboard Overview: 58
+    Email: 53
+    <rect: 53
+    Status: 53
+
+Non-renderable metrics:
+  Total metrics across all samples: 12426
+  Unique metrics: 5602
+  Average per sample: 13.1
+
+  Top 20 most common metrics:
+    galaxy.name: 93
+    planet.name: 84
+    planet_name: 72
+    planet.atmosphere.pressure: 62
+    planet.atmosphere.composition: 60
+    museum.name: 57
+    spaceship.name: 56
+    museum.location.city: 55
+    planet.discovery.year: 53
+    csv::DiscoveryDate: 53
+    museum.location.country: 51
+    spaceship.crew.captain: 44
+    system.star_name: 43
+    spaceship.model: 43
+    planet.moons: 40
+    planet.discovery.method: 39
+    spaceship.missions[0].destination: 39
+    spaceship.missions[1].destination: 39
+    planet.type: 38
+    moons[0].diameter_km: 37
