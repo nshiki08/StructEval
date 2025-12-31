@@ -188,3 +188,10 @@ eval_logs_nonrenderable
 eval_logs
 splitAngular.py
 splitRenderable.py
+
+# Competition eval
+competition_eval/inference_test_data/
+competition_eval/notebook/evaluation_results.json
+
+# Claude Code
+.claude/
