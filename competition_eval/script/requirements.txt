@@ -1,0 +1,14 @@
+# StructEval-T Competition Evaluation Script Dependencies
+
+# Original StructEval dependencies
+fire
+python-dotenv
+playwright
+xmltodict
+toml
+pdf2image
+markdown
+matplotlib
+
+# Additional dependencies for evaluation
+PyYAML>=6.0
